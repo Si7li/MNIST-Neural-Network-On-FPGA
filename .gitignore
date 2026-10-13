@@ -1,0 +1,29 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Videos (too big for GitHub)
+*.MOV
+*.mov
+*.avi
+BL_proxy/
+
+# ModelSim / Questa
+work/
+transcript
+*.wlf
+wlf*
+*.cr.mti
+stdout
+DebugErc.log
+
+# Xilinx ISE build outputs (sources, .ucf, .tcl, .xise and .bit stay)
+fpga/ise/*
+!fpga/ise/create_project.tcl
+!fpga/ise/nexys3_digits.xise
+!fpga/ise/nexys3_top.bit
+!fpga/ise/nexys3_top.prj
+
+# Backups
+*.bak

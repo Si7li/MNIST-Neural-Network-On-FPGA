@@ -1,0 +1,266 @@
+Reading pref.tcl
+
+# 2020.1
+
+# do fpga/sim/run_nexys3_top.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:37 on Oct 08,2026
+# vcom -work work src/full_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_adder
+# -- Compiling architecture gates of full_adder
+# End time: 13:32:37 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:37 on Oct 08,2026
+# vcom -work work src/adder_n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_n
+# -- Compiling architecture ripple of adder_n
+# -- Loading entity full_adder
+# End time: 13:32:37 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:37 on Oct 08,2026
+# vcom -work work src/mult_su.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mult_su
+# -- Compiling architecture array_mult of mult_su
+# -- Loading entity adder_n
+# End time: 13:32:37 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:37 on Oct 08,2026
+# vcom -work work src/relu_shift_sat.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity relu_shift_sat
+# -- Compiling architecture gates of relu_shift_sat
+# End time: 13:32:37 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:37 on Oct 08,2026
+# vcom -work work src/comparator_gt.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity comparator_gt
+# -- Compiling architecture sub of comparator_gt
+# -- Loading entity adder_n
+# End time: 13:32:37 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:37 on Oct 08,2026
+# vcom -work work fpga/src/mlp_params.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mlp_params
+# End time: 13:32:37 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:37 on Oct 08,2026
+# vcom -work work fpga/src/reg_n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg_n
+# -- Compiling architecture dff of reg_n
+# End time: 13:32:37 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:38 on Oct 08,2026
+# vcom -work work src/max2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity max2
+# -- Compiling architecture rtl of max2
+# -- Loading entity comparator_gt
+# End time: 13:32:38 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:38 on Oct 08,2026
+# vcom -work work src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity argmax10
+# -- Compiling architecture tree of argmax10
+# -- Loading entity max2
+# End time: 13:32:38 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:38 on Oct 08,2026
+# vcom -work work fpga/src/weights_rom32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rom_l1
+# -- Compiling architecture table of rom_l1
+# -- Compiling entity rom_l2
+# -- Compiling architecture table of rom_l2
+# End time: 13:32:38 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:38 on Oct 08,2026
+# vcom -work work fpga/src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mlp_params
+# -- Compiling entity mac_unit
+# -- Compiling architecture rtl of mac_unit
+# -- Loading entity mult_su
+# -- Loading entity adder_n
+# -- Loading entity reg_n
+# End time: 13:32:38 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:38 on Oct 08,2026
+# vcom -work work fpga/src/mlp_par32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mlp_params
+# -- Compiling entity mlp_par32
+# -- Compiling architecture rtl of mlp_par32
+# -- Loading entity reg_n
+# -- Loading entity adder_n
+# -- Loading entity rom_l1
+# -- Loading entity rom_l2
+# -- Loading entity mac_unit
+# -- Loading entity relu_shift_sat
+# -- Loading entity argmax10
+# End time: 13:32:38 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:38 on Oct 08,2026
+# vcom -work work fpga/src/bits_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package bits_pkg
+# -- Compiling package body bits_pkg
+# -- Loading package bits_pkg
+# End time: 13:32:38 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:38 on Oct 08,2026
+# vcom -work work fpga/src/uart_rx.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package bits_pkg
+# -- Compiling entity uart_rx
+# -- Compiling architecture rtl of uart_rx
+# -- Loading entity reg_n
+# -- Loading entity adder_n
+# End time: 13:32:38 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:38 on Oct 08,2026
+# vcom -work work fpga/src/uart_tx.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package bits_pkg
+# -- Compiling entity uart_tx
+# -- Compiling architecture rtl of uart_tx
+# -- Loading entity reg_n
+# -- Loading entity adder_n
+# End time: 13:32:38 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:38 on Oct 08,2026
+# vcom -work work fpga/src/frame_rx.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mlp_params
+# -- Compiling entity frame_rx
+# -- Compiling architecture rtl of frame_rx
+# -- Loading entity reg_n
+# -- Loading entity adder_n
+# End time: 13:32:38 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:38 on Oct 08,2026
+# vcom -work work fpga/src/seg7.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seg7
+# -- Compiling architecture table of seg7
+# End time: 13:32:38 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:38 on Oct 08,2026
+# vcom -work work fpga/src/nexys3_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mlp_params
+# -- Compiling entity nexys3_top
+# -- Compiling architecture structural of nexys3_top
+# -- Loading entity reg_n
+# -- Loading entity adder_n
+# -- Loading package bits_pkg
+# -- Loading entity uart_rx
+# -- Loading entity frame_rx
+# -- Loading entity mlp_par32
+# -- Loading entity seg7
+# -- Loading entity uart_tx
+# End time: 13:32:38 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:38 on Oct 08,2026
+# vcom -work work fpga/sim/nexys3_top_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity nexys3_top_tb
+# -- Compiling architecture sim of nexys3_top_tb
+# -- Loading package mlp_params
+# -- Loading entity nexys3_top
+# End time: 13:32:38 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.nexys3_top_tb 
+# Start time: 13:32:38 on Oct 08,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mlp_params
+# Loading work.nexys3_top_tb(sim)
+# Loading work.bits_pkg(body)
+# Loading work.nexys3_top(structural)
+# Loading work.reg_n(dff)
+# Loading work.adder_n(ripple)
+# Loading work.full_adder(gates)
+# Loading work.uart_rx(rtl)
+# Loading work.frame_rx(rtl)
+# Loading work.mlp_par32(rtl)
+# Loading work.rom_l1(table)
+# Loading work.rom_l2(table)
+# Loading work.mac_unit(rtl)
+# Loading work.mult_su(array_mult)
+# Loading work.relu_shift_sat(gates)
+# Loading work.argmax10(tree)
+# Loading work.max2(rtl)
+# Loading work.comparator_gt(sub)
+# Loading work.seg7(table)
+# Loading work.uart_tx(rtl)
+# ** Warning: Design size of 55513 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# Results written to fpga/sim/results_top.lst and fpga/sim/top_txd.vcd
+#  quit -f
+# End time: 13:33:12 on Oct 08,2026, Elapsed time: 0:00:34
+# Errors: 0, Warnings: 1

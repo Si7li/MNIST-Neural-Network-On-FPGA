@@ -1,0 +1,140 @@
+Reading pref.tcl
+
+# 2020.1
+
+# do fpga/sim/run_mlp_seq.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:18:43 on Oct 08,2026
+# vcom -work work src/full_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_adder
+# -- Compiling architecture gates of full_adder
+# End time: 13:18:43 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:18:43 on Oct 08,2026
+# vcom -work work src/adder_n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_n
+# -- Compiling architecture ripple of adder_n
+# -- Loading entity full_adder
+# End time: 13:18:44 on Oct 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:18:44 on Oct 08,2026
+# vcom -work work src/mult_su.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mult_su
+# -- Compiling architecture array_mult of mult_su
+# -- Loading entity adder_n
+# End time: 13:18:44 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:18:44 on Oct 08,2026
+# vcom -work work src/relu_shift_sat.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity relu_shift_sat
+# -- Compiling architecture gates of relu_shift_sat
+# End time: 13:18:44 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:18:44 on Oct 08,2026
+# vcom -work work src/comparator_gt.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity comparator_gt
+# -- Compiling architecture sub of comparator_gt
+# -- Loading entity adder_n
+# End time: 13:18:44 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:18:44 on Oct 08,2026
+# vcom -work work fpga/src/mlp_params.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mlp_params
+# End time: 13:18:44 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:18:44 on Oct 08,2026
+# vcom -work work fpga/src/weights_rom.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity weights_rom
+# -- Compiling architecture table of weights_rom
+# -- Compiling entity bias_rom
+# -- Compiling architecture table of bias_rom
+# End time: 13:18:44 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:18:44 on Oct 08,2026
+# vcom -work work fpga/src/reg_n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg_n
+# -- Compiling architecture dff of reg_n
+# End time: 13:18:44 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:18:44 on Oct 08,2026
+# vcom -work work fpga/src/mlp_seq.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mlp_params
+# -- Compiling entity mlp_seq
+# -- Compiling architecture rtl of mlp_seq
+# -- Loading entity reg_n
+# -- Loading entity adder_n
+# -- Loading entity weights_rom
+# -- Loading entity bias_rom
+# -- Loading entity mult_su
+# -- Loading entity relu_shift_sat
+# -- Loading entity comparator_gt
+# End time: 13:18:44 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:18:44 on Oct 08,2026
+# vcom -work work fpga/sim/mlp_seq_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mlp_params
+# -- Compiling entity mlp_seq_tb
+# -- Compiling architecture sim of mlp_seq_tb
+# -- Loading entity mlp_seq
+# End time: 13:18:44 on Oct 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.mlp_seq_tb 
+# Start time: 13:18:44 on Oct 08,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mlp_params
+# Loading work.mlp_seq_tb(sim)
+# Loading work.mlp_seq(rtl)
+# Loading work.reg_n(dff)
+# Loading work.adder_n(ripple)
+# Loading work.full_adder(gates)
+# Loading work.weights_rom(table)
+# Loading work.bias_rom(table)
+# Loading work.mult_su(array_mult)
+# Loading work.relu_shift_sat(gates)
+# Loading work.comparator_gt(sub)
+# Results written to fpga/sim/results_seq.lst
+#  quit -f
+# End time: 13:19:41 on Oct 08,2026, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 0
