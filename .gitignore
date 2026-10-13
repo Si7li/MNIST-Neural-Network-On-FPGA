@@ -27,3 +27,6 @@ fpga/ise/*
 
 # Backups
 *.bak
+
+# Personal notes (kept locally)
+EXPLANATIONS.md
